@@ -4,15 +4,24 @@
  * and open the template in the editor.
  */
 package praktikum1;
+import java.util.Scanner;
 /**
  *
  * @author rizwa
  */
 public class Lingkaran {
-    // method penghitungan
-    public void menghitungluas(double r){
-        double luaslingkaran = (double)(Math.PI*r*r);
-        System.out.println("Luas Permukaan Bola adalah: "+luaslingkaran+" cm²");
+    Scanner input = new Scanner(System.in);
+    
+    String bangundatar;
+    double r,hasil;
+    
+    void luaslingkaran() {
+        System.out.println("Menghitung Luas Lingkaran");
+        System.out.print("Masukkan jari-jari(r): ");
+        r = input.nextInt();
+        
+        hasil = (3.1428571428571 * r * r);
+    
+        System.out.println("Luasnya adalah: "+hasil);
     }
 }
-
