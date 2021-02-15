@@ -15,38 +15,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner (System.in);
-        
-        Lingkaran lingkaran = new Lingkaran();
-        Persegi persegi = new Persegi();
-        
-        System.out.println("====LAMAN MENGHITUNG LUAS BANGUN DATAR====");
-        System.out.println("             Selamat Datang");
-        System.out.println("");
-        System.out.println("Silahkan memilih :>");
-        System.out.println("1. Luas Bangun Lingkaran");
-        System.out.println("2. Luas Bangun Persegi");
-        System.out.println("Pilihan Anda: ");
-        int inputluas  = input.nextInt();
-        
-        switch (inputluas) {
-            case 1:
-                System.out.println("");
-                System.out.println("Jari-jari lingkaran = ");
-                double jarijari = input.nextDouble();
-                lingkaran.menghitungluas(jarijari);
-                break;
-            case 2:
-                System.out.println("");
-                System.out.println("Jari-jari persegi = ");
-                double sisi = input.nextDouble();
-                persegi.menghitungluas(sisi);
-                break;
-            default:
-                System.out.println("Akan ada bangun lain besok hari, stay tunee!");
-        }
+    Lingkaran luas = new Lingkaran(); 
+    luas.luaslingkaran();
+    
+    Persegi luas2 = new Persegi();
+    luas2.luaspersegi();
     }
 }
-
 
     
